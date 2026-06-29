@@ -7,7 +7,7 @@ Nutricca App adalah aplikasi berbasis AI yang dirancang untuk membantu pengguna 
 ## 🏗️ Arsitektur Aplikasi
 
 ```
-health-plan-app/
+nutricca-app/
 ├── frontend/        # React + Vite
 ├── backend/         # Node.js + Express + PostgreSQL
 └── ai-api/          # FastAPI (Python)
@@ -41,8 +41,8 @@ Pastikan kamu sudah menginstal tools berikut sebelum memulai:
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/username/health-plan-app.git
-cd health-plan-app
+git clone https://github.com/stevevaijohnpettruci/nutricca-app.git
+cd nutricca-app
 ```
 
 ---
@@ -113,7 +113,7 @@ Setup database PostgreSQL:
 
 ```bash
 # Buat database baru
-psql -U postgres -c "CREATE DATABASE health_plan_db;"
+psql -U postgres -c "CREATE DATABASE nutricca_db;"
 
 # Jalankan migrasi
 npm run migrate
