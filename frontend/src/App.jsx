@@ -8,6 +8,7 @@ import { AppProvider } from './context/AppContext';
 import { AuthProvider } from './context/AuthContext';
 import { Layout } from './components/Layout';
 import { Dashboard } from './pages/Dashboard';
+import { LandingPage } from './pages/LandingPage';
 import { Kebiasaan } from './pages/Kebiasaan';
 import { Rekomendasi } from './pages/Rekomendasi';
 import { Progress } from './pages/Progress';
@@ -42,7 +43,8 @@ function AppRoutes() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="*" element={<Navigate to="/login" replace />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     );
   }
